@@ -47,14 +47,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void displayInRecyclerView(){
-        List<Album> albums1 = new ArrayList<>();
-        albums1.add(new Album(1L, "skfjdslkj", "slkjfdsklfj", "POP", 1805));
-        albums1.add(new Album(2L, "skfjdslkj", "slkjfdsklfj", "POP", 1805));
-        albums1.add(new Album(3L, "skfjdslkj", "slkjfdsklfj", "POP", 1805));
-        albums1.add(new Album(4L, "skfjdslkj", "slkjfdsklfj", "POP", 1805));
+//        List<Album> albums1 = new ArrayList<>();
+//        albums1.add(new Album(1L, "skfjdslkj", "slkjfdsklfj", "POP", 1805));
+//        albums1.add(new Album(2L, "skfjdslkj", "slkjfdsklfj", "POP", 1805));
+//        albums1.add(new Album(3L, "skfjdslkj", "slkjfdsklfj", "POP", 1805));
+//        albums1.add(new Album(4L, "skfjdslkj", "slkjfdsklfj", "POP", 1805));
 
         recyclerView = activityMainBinding.recyclerView;
-        albumAdapter  = new AlbumAdapter(albums1, this);
+        albumAdapter  = new AlbumAdapter(albums, this);
         recyclerView.setAdapter(albumAdapter);
         recyclerView.setLayoutManager( new LinearLayoutManager(this));
         recyclerView.setHasFixedSize(true);

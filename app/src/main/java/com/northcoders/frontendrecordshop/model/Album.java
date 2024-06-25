@@ -2,24 +2,30 @@ package com.northcoders.frontendrecordshop.model;
 
 import androidx.databinding.BaseObservable;
 import androidx.databinding.Bindable;
+import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 import com.northcoders.frontendrecordshop.BR;
 
 public class Album extends BaseObservable {
 
     @SerializedName("id")
+    @Expose
     private long id;
 
-    @SerializedName("albumName")
+    @SerializedName("title")
+    @Expose
     private String albumName;
 
-    @SerializedName("artistName")
+    @SerializedName("artist")
+    @Expose
     private String artistName;
 
     @SerializedName("genre")
+    @Expose
     private String genre;
 
-    @SerializedName("releaseYear")
+    @SerializedName("year")
+    @Expose
     private int releaseYear;
 
     public Album(long id, String albumName, String artistName, String genre, int releaseYear) {
