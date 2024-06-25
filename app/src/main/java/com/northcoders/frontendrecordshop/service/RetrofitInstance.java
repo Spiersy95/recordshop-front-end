@@ -22,6 +22,7 @@ public class RetrofitInstance {
 
         Gson gson = new GsonBuilder()
                 .excludeFieldsWithoutExposeAnnotation().create();
+
         if (retrofit==null){
             retrofit = new Retrofit.Builder()
                     .baseUrl(BASE_URL)
